@@ -1,5 +1,7 @@
 package views
 
+// For displaying Response
+
 type OrdersCreateView struct {
 	OrderedAt    string             `json:"ordered_at"`
 	CustomerName string             `json:"customer_name"`

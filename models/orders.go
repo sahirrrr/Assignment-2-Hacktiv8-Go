@@ -2,6 +2,8 @@ package models
 
 import "github.com/jinzhu/gorm"
 
+// For Database
+
 type Orders struct {
 	gorm.Model
 	CustomerName string  `json:"customer_name"`
@@ -15,6 +17,8 @@ type Items struct {
 	Quantity    int    `json:"quantity"`
 	OrderID     int    `json:"order_id"`
 }
+
+// For Request Body
 
 type OrdersCreate struct {
 	CustomerName string        `json:"customer_name"`
